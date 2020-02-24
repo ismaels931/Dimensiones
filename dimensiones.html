@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dimensiones</title>
+	<script type="text/javascript">
+		function dimensiones() {
+			document.getElementById('ancho').innerHTML = 'Width: ' + window.innerWidth + ' px';
+			document.getElementById('largo').innerHTML = 'Heigth: ' + window.innerHeight + ' px';
+		}
+		window.onload = dimensiones;
+	</script>
+</head>
+<body onresize = 'dimensiones();'>
+	<h1 id = 'ancho'></h1>
+	<h1 id = 'largo'></h1>
+
+</body>
+</html>
